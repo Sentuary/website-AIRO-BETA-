@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Website JMK (Next.js)
 
-## Getting Started
+Ini adalah project website **JMK** yang dibangun menggunakan **Next.js** versi terbaru dengan fitur App Router, React 19, TypeScript, dan Tailwind CSS v4.
 
-First, run the development server:
+## 🚀 Fitur Utama
+
+- **Next.js 16 (App Router)** - Routing modern yang cepat, aman, dan mendukung Server Components.
+- **React 19** - Memanfaatkan fitur React terbaru untuk performa optimal.
+- **Tailwind CSS v4** - Styling utility-first yang super cepat dengan engine compiler terbaru.
+- **TypeScript** - Menjamin tipe data yang aman dan meminimalisir bug selama development.
+
+## 🛠️ Persiapan Memulai (Getting Started)
+
+Ikuti langkah-langkah di bawah ini untuk menjalankan project di lingkungan lokal Anda.
+
+### Prasyarat
+
+Pastikan Anda sudah menginstal:
+- **Node.js** (Rekomendasi versi LTS terbaru)
+- **npm** (Bawaan Node.js) atau **yarn** / **pnpm**
+
+### Instalasi Dependensi
+
+Pertama, klon repositori ini (atau buka foldernya) dan instal semua modul yang dibutuhkan:
+
+```bash
+npm install
+# atau
+yarn install
+# atau
+pnpm install
+```
+
+### Menjalankan Server Development
+
+Jalankan perintah berikut untuk memulai local development server:
 
 ```bash
 npm run dev
-# or
+# atau
 yarn dev
-# or
+# atau
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka [http://localhost:3000](http://localhost:3000) pada browser Anda untuk melihat hasilnya.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build untuk Produksi
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Untuk membuat build produksi yang dioptimalkan, jalankan:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Setelah build selesai, Anda dapat menjalankannya dengan:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📂 Struktur Folder Proyek
 
-## Deploy on Vercel
+```text
+├── app/                  # App Router (Halaman, Layout, & Style Global)
+│   ├── favicon.ico       # Favicon website
+│   ├── globals.css       # Style CSS Global (Tailwind CSS v4)
+│   ├── layout.tsx        # Layout utama (Root Layout)
+│   └── page.tsx          # Halaman utama (Home Page)
+├── public/               # File statis (Gambar, Font, dll.)
+├── next.config.ts        # Konfigurasi Next.js
+├── postcss.config.mjs    # Konfigurasi PostCSS
+├── package.json          # Metadata project & Dependensi
+├── tsconfig.json         # Konfigurasi TypeScript
+└── eslint.config.mjs     # Konfigurasi ESLint linting
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Dibuat untuk menyelesaikan matakuliah manajemen proyek TI.
