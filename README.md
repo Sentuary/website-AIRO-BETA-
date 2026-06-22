@@ -1,6 +1,6 @@
 # Website JMK (Next.js)
 
-Ini adalah project website **JMK** yang dibangun menggunakan **Next.js** versi terbaru dengan fitur App Router, React 19, TypeScript, dan Tailwind CSS v4.
+Ini adalah project website Jasa Mengajar Robotika yang disingkat **JMK** yang dibangun menggunakan **Next.js** versi terbaru dengan fitur App Router, React 19, TypeScript, dan Tailwind CSS v4.
 
 ## 🚀 Fitur Utama
 
